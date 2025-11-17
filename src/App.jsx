@@ -3,6 +3,7 @@ import Navbar from './components/Navbar'
 import Footer from './components/Footer'
 import Home from './pages/Home'
 import StaticPage from './pages/StaticPage'
+import CatBot from './components/CatBot'
 
 function AppShell({ children }) {
   return (
@@ -10,6 +11,8 @@ function AppShell({ children }) {
       <Navbar />
       <main>{children}</main>
       <Footer />
+      {/* Floating 24/7 Cat Bot */}
+      <CatBot />
     </div>
   )
 }
